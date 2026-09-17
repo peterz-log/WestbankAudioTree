@@ -84,8 +84,8 @@ jobs:
           echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
           ls -la "$ANDROID_HOME/build-tools"
           ls -la "$ANDROID_HOME/build-tools/37.0.0"
-          "$ANDROID_HOME/build-tools/37.0.0/aidl" --version
-
+          "$ANDROID_HOME/build-tools/37.0.0/aidl" --help
+          
       - name: Install Buildozer
         run: |
           python -m pip install --upgrade pip
